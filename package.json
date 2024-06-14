@@ -1,0 +1,17 @@
+{
+  "name": "telegram-ecobot-main",
+  "version": "1.0.0",
+  "description": "Telegram bot with addresses and contacts of places where you can take raw materials for recycling",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "grammy": "^1.24.1",
+    "nodemon": "^3.1.3"
+  }
+}
