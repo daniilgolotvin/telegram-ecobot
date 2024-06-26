@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chessboard with Circles</title>
+	<style>
+		.chessboard {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			background:
+				linear-gradient(90deg, #fff 50%, #654321 50%) 0 0 / 100px 100px,
+				linear-gradient(90deg, #654321 50%, #fff 50%) 0 0 / 100px 100px;
+		}
+
+		.chessboard::before,
+		.chessboard::after {
+			content: '';
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			background: radial-gradient(circle, #555 20%, #333 30%, #555 40%);
+			border-radius: 50%;
+		}
+
+		.chessboard::before {
+			top: 10px;
+			left: 10px;
+		}
+
+		.chessboard::after {
+			bottom: 10px;
+			right: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="chessboard"></div>
+</body>
+
+</html>
